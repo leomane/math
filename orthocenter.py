@@ -15,7 +15,6 @@ def get_points():
 	points.append(get_point('third'))
 	return points
 
-
 def get_point(position):
 	point = []
 	point.append(input('Enter '+position+' x coord: '))
@@ -25,8 +24,8 @@ def get_point(position):
 def slope(a,b):
 	return float(a[1] - b[1]) / (a[0] - b[0])
 
-def inverse(a):
-	return float(1 / a * -1)
+def inverse(m):
+	return float(1 / m * - 1)
 
 # This function, used to calculate the orthocenter (zx, zy) of
 # the triangle, begins with writting the altitude running through 

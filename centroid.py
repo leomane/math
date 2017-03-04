@@ -23,8 +23,8 @@ def get_point(position):
 def slope(a,b):
 	return float(a[1] - b[1]) / (a[0] - b[0])
 
-def inverse(a):
-	return float(1 / a * -1)
+def inverse(m):
+	return float(1 / m * - 1)
 
 def midpoint(a,b):
 	x = float(a[0] + b[0]) / 2
