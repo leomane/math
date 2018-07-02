@@ -15,5 +15,9 @@ def gcf(a, b):
 		return gcf(a-b, b)
 	else:
 		return gcf(b-a, a)
+	
+def lcm(a, b):
+	return a * b / gcf(a,b)
 
 print gcf(int(sys.argv[1]), int(sys.argv[2]))
+print lcm(int(sys.argv[1]), int(sys.argv[2]))
